@@ -68,10 +68,18 @@
       <section class="caption">
         <div class="container caption-hero">
           <h1 class="caption-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <a href="#" class="icon-off " aria-label="Кнопка закрытия окна" data-modal-close>
+              <svg width="11px" height="11px">
+                <use href="./img/sprite.svg#icon-off"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
-
       <!-- Чем мы занимаемся/о нас -->
       <section class="about wrap">
         <div class="container">
@@ -131,7 +139,6 @@
           </ul>
         </div>
       </section>
-
       <section class="job wrap-second">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
@@ -173,7 +180,6 @@
           </ul>
         </div>
       </section>
-
       <!-- Наша команда -->
       <section class="team wrap">
         <div class="container">
@@ -464,5 +470,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
