@@ -116,9 +116,10 @@ p {
 
 .site-nav .link::after {
   position: absolute;
-  left: 0;
-  bottom: 0;
   content: '';
+  left: 0;
+  bottom: -2.5px;
+  margin: 0;
 
   display: block;
   width: 100%;
@@ -288,6 +289,11 @@ p {
   width: 206px;
 }
 
+.footer-social-icons {
+  width: 44px;
+  height: 44px;
+}
+
 .footer-icons {
   display: flex;
   justify-content: center;
@@ -393,6 +399,7 @@ p {
 }
 .about-item {
   width: 270px;
+  height: 251px;
 }
 
 .about-item:not(:last-child) {
@@ -471,6 +478,9 @@ p {
 }
 
 .team-window {
+  width: 270px;
+  height: 428px;
+
   background-color: var(--page-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -509,6 +519,11 @@ p {
 
 .icons-list {
   justify-content: space-between;
+}
+
+.social-item {
+  width: 206px;
+  height: 44px;
 }
 
 .social-icons {
@@ -674,7 +689,8 @@ p {
   display: flex;
   margin-right: 30px;
   margin-top: 30px;
-  max-width: 370px;
+  width: 370px;
+  height: 404px;
 
   background-color: var(--page-color);
   outline-color: var(--border-color);
@@ -730,7 +746,8 @@ p {
   transition: transform var(--smooth-transition);
 }
 
-.product-window:hover .product-info {
+.link:hover .product-info,
+.link:focus .product-info {
   transform: translateY(0);
 }
 
