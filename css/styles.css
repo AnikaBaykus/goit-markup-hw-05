@@ -721,7 +721,7 @@ p {
 
 .product-info {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 
   display: flex;
@@ -738,13 +738,11 @@ p {
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--smooth-transition);
   transform: translateY(100%);
-  opacity: 0;
 }
 
 .link:hover .product-info,
 .link:focus .product-info {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .product-image {
