@@ -399,7 +399,6 @@ p {
 }
 .about-item {
   width: 270px;
-  height: 251px;
 }
 
 .about-item:not(:last-child) {
@@ -444,7 +443,6 @@ p {
 
   display: flex;
   width: 370px;
-  height: 294px;
 }
 
 .job-info {
@@ -453,12 +451,11 @@ p {
   left: 0;
   bottom: 0;
 
-  display: inline-block;
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
 
   text-align: center;
   text-transform: uppercase;
@@ -479,7 +476,6 @@ p {
 
 .team-window {
   width: 270px;
-  height: 428px;
 
   background-color: var(--page-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -690,7 +686,6 @@ p {
   margin-right: 30px;
   margin-top: 30px;
   width: 370px;
-  height: 404px;
 
   background-color: var(--page-color);
   outline-color: var(--border-color);
@@ -726,10 +721,8 @@ p {
 
 .product-info {
   position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  transform: translateY(100%);
+  top: 0;
+  left: 0;
 
   display: flex;
   align-items: center;
@@ -744,11 +737,14 @@ p {
   color: var(--page-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--smooth-transition);
+  transform: translateY(100%);
+  opacity: 0;
 }
 
 .link:hover .product-info,
 .link:focus .product-info {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .product-image {
