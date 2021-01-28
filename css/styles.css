@@ -147,6 +147,7 @@ p {
 
 .contacts-header .link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -721,7 +722,7 @@ p {
 
 .product-info {
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
 
   display: flex;
@@ -737,12 +738,12 @@ p {
   color: var(--page-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--smooth-transition);
-  transform: translateY(100%);
+  transform: translateY(0);
 }
 
 .link:hover .product-info,
 .link:focus .product-info {
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 
 .product-image {
